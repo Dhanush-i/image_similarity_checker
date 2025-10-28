@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Similarity Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Image Similarity Checker</h1>
+    <p>Upload two images and select a model to compute their similarity.</p>
+
+    <div class="main-container">
+        <form id="upload-form">
+            <div class="controls">
+                <div class="upload-box">
+                    <label for="image1">Image 1</label>
+                    <input type="file" id="image1" name="image1" accept="image/*" required>
+                    <img id="preview1" class="preview" src="#" alt="Preview Image 1" />
+                </div>
+                <div class="upload-box">
+                    <label for="image2">Image 2</label>
+                    <input type="file" id="image2" name="image2" accept="image/*" required>
+                    <img id="preview2" class="preview" src="#" alt="Preview Image 2" />
+                </div>
+            </div>
+
+            <div class="options">
+                <label for="model-select">Choose Comparison Model:</label>
+                <select id="model-select" name="model">
+                    <option value="ssim">Structural Similarity (SSIM)</option>
+                    <option value="vgg16" selected>Deep Learning (VGG16)</option>
+                    <option value="resnet50">Deep Learning (ResNet50)</option>
+                    <option value="mobilenet_v2">Deep Learning (MobileNetV2)</option>
+                </select>
+            </div>
+
+            <button type="submit" id="compare-btn">Compare Images</button>
+        </form>
+
+        <div id="results-container" class="hidden">
+            <h2>Results</h2>
+            <div id="loader" class="loader hidden"></div>
+            <div id="results-content">
+                <h3>Similarity Score: <span id="score"></span></h3>
+                <p id="score-description"></p>
+                <div class="visualization">
+                    <h3>Difference Heatmap</h3>
+                    <p id="heatmap-description">This heatmap visualizes the pixel-level differences. Blue areas are identical, while yellow and red areas are very different.</p>
+                    <img id="heatmap-image" src="#" alt="Difference Heatmap" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
