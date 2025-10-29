@@ -2,10 +2,7 @@
 
 This is a full-stack web application that enables users to upload any two images and compute their similarity using both classic image processing (SSIM) and modern deep learning (CNNs) techniques. The system displays a similarity score, a visual heatmap of the differences, and a clear explanation of the results.
 
-This project was built to fulfill the "Essentials of Deep Learning" assignment.
-
-![Main screenshot of the application's user interface](./img/screenshot-main.png)
-*(**Note:** Replace this with a real screenshot. I suggest creating an `img` folder and adding `screenshot-main.png` to it.)*
+(./img/screenshot-main.png)
 
 ---
 
@@ -34,8 +31,7 @@ When comparing two *different* photos of the same subject, the CNN model (VGG16/
 
 | Image 1 | Image 2 | Results |
 | :---: | :---: | :---: |
-| ![Your first sample image](./img/sample1a.png) | ![Your second sample image](./img/sample1b.png) | ![Screenshot of the results for this pair](./img/result1.png) |
-| **(Upload your 1st image here)** | **(Upload your 2nd image here)** | **(Upload screenshot of the result)** |
+| (./img/sample1a.png) | (./img/sample1b.png) | (./img/result1.png) |
 
 
 ### Example 2: Low Structural Similarity (SSIM Model)
@@ -44,8 +40,7 @@ Using the *same* two images as above, the SSIM model correctly reports a **low**
 
 | Image 1 | Image 2 | Results |
 | :---: | :---: | :---: |
-| ![Your first sample image](./img/sample1a.png) | ![Your second sample image](./img/sample1b.png) | ![Screenshot of the SSIM results for this pair](./img/result2.png) |
-| **(Use the same image as above)** | **(Use the same image as above)** | **(Upload screenshot of the SSIM result)** |
+| (./img/sample1a.png) | (./img/sample1b.png) | (./img/result2.png) |
 
 ---
 
