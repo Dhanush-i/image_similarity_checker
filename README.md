@@ -39,7 +39,7 @@ Using the *same* two images as above, the SSIM model correctly reports a **low**
 
 | Image 1 | Image 2 | Results |
 | :---: | :---: | :---: |
-| ![sample image 1](img/sample1a.png) | ![sample image 2](img/sample1b.png) | ![result screenshot 1](img/result2.png) |
+| ![sample image 1](img/sample1a.png) | ![sample image 2](img/sample1b.png) | ![result screenshot 1](img/result2..png) |
 
 ---
 
