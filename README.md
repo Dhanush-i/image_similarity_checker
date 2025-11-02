@@ -131,3 +131,7 @@ Follow these instructions to get the project running on your local machine.
 3.  Choose your desired model from the "Choose Comparison Model" dropdown.
 4.  Click the **"Compare Images"** button.
 5.  The results, including the score and heatmap, will appear below.
+
+## License
+
+This project is licensed under the MIT License - see the `LICENSE.md` file for details.
